@@ -1,23 +1,24 @@
 body {
 	background-color: gray;
 }
- .affix {
-      top: 0;
-      width: 100%;
-       padding: 6px 0;
-  }
+.affix {
+	top: 0;
+	width: 100%;
+	padding: 6px 0;
+}
 
-  .affix + .container-fluid {
-      padding-top: 70px;
-  }
+.affix + .container-fluid {
+	padding-top: 70px;
+}
 h1 {
 	margin: 0 auto;
 	display: block;
 	text-align: center;
 	color: orange;
+	font-family: 'impact', sans-serif;
 }
 
-h3{
+h3 {
 	text-align: center;
 }
 .drinks {
@@ -25,28 +26,47 @@ h3{
 	-webkit-columns: 2;
 	-moz-columns: 2;
 	list-style-type: none;
+	padding: 0;
+	width: 70%;
+	margin: 0 auto;
 }
-header,
-nav{
+button.navbar-toggle {
+	background: orangered;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+.glyphicon {
+	color: #fff;
+}
+header, nav {
 	background: #fff;
 }
-nav ul{
+
+nav ul {
 	text-align: center;
+	padding: 0;
 }
+
 nav ul li {
 	display: inline;
 	font-size: 20px;
 	text-decoration: none;
 }
+
 li a {
 	color: orange;
 	display: inline;
 	text-decoration: none;
 }
 
+.board {
+	box-shadow: 5px 5px 10px #ccff6;
+}
 .menu {
-	width: 50%;
-	margin: 20px auto;
+	float: left;
+	width: 49%;
+	margin: 4px;
 	border: 2px solid orange;
 	padding: 10px;
 }
@@ -65,27 +85,143 @@ li a {
 .drinks li {
 	color: #20771f;
 	font-weight: bold;
+	padding: 5px 0;
 }
 li p {
 	display: inline-block;
 	font-size: 10px;
 }
 .logo {
-	    border: 2px solid orange;
-    width: 75px;
-    height: 75px;
-    margin: 10px auto;
+	border: 2px solid orange;
+	width: 75px;
+	height: 75px;
+	margin: 10px auto;
 	display: block;
 	border-radius: 50%;
 }
 
 .display {
-	width: 70%;
-	margin: 0 auto;
+	position: relative;
+	width: 80%;
+	    margin: 46px auto;
 	display: block;
 }
-@media screen and (max-width:768px){
-	.menu{
+.abtimg {
+	width: 43%;
+	float: right;
+	margin: 0 auto;
+}
+.summary {
+	padding: 10px 40px;
+	width: 380px;
+	line-height: 34px;
+	margin-left: 2%;
+}
+.caption {
+	top: 45%;
+	left: 0;
+	width: 100%;
+}
+.message {
+	display: block;
+	width: 65%;
+	margin: 0 auto;
+}
+.title {
+	text-align: center;
+	font-size: 16px;
+	max-width: 300px;
+	background: #581175;
+	color: #fff;
+	font-family: 'impact', sans-serif;
+	opacity: 0.8;
+	padding: 15px;
+	line-height: 30px;
+	margin-left: 5%;
+}
+.phone {
+	text-align: right;
+	color: #20771f;
+	font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+	.menu {
 		width: 100%;
 	}
+	.logo {
+		width: 40px;
+		height: 40px;
+	}
+	.display{
+		width: 100%;
+	}
+	.message {
+		width: 90%;
+		margin-left: 0;
+	}
+	.summary {
+		margin-left: 10%;
+		width: 100%;
+		padding: 10px 4px
+	}
+	.title {
+		padding: 5px 50px;
+		width: 280px;
+	}
+	.abtimg {
+		width: 51%;
+		margin-left: 18px;
+		margin-top: 22px;
+	}
+	.navbar {
+		margin-bottom: 0;
+	}
+}
+@media screen and (min-width: 768px) {
+
+	.center {
+		margin: 0 auto;
+		width: 345px;
+	}
+	.navbar-nav {
+		width: 100%;
+		text-align: center;> li {
+		float: none;
+		display: inline-block;
+	}
+}
+
+}
+.hours {
+	float: right;
+	border: 2px solid gainsboro;
+	width: 300px;
+	padding: 25px;
+	font-weight: bold;
+}
+.hours ul {
+	padding: 0;
+	text-indent: 20px;
+}
+.hours ul li {
+	list-style-type: none;
+}
+footer {
+	bottom: 0;
+	color: #bfbbb1;
+	font-size: 20px;
+	width: 100%;
+	float: right;
+	padding-top: 20px;
+		    background: #5d425f;
+		    margin-top: 10px;
+}
+footer p:before {
+	width: 50px;
+	color: #bfbbb1;
+	height: 2px;
+}
+footer p {
+	    text-align: center;
+    padding: 25px;
 }
