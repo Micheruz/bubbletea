@@ -17,16 +17,11 @@ h1 {
 	color: orange;
 	font-family: 'impact', sans-serif;
 }
-.about,
-h3 {
+.about, h3 {
 	text-align: center;
 }
-h2,
-h3,
-h4,
-li,
-p{
-	font-family: 'montserrat',sans-serif;
+h2, h3, h4, li, p {
+	font-family: 'montserrat', sans-serif;
 }
 .drinks {
 	columns: 2;
@@ -46,8 +41,8 @@ button.navbar-toggle {
 .glyphicon {
 	color: #fff;
 }
-header{
-	    font-family: 'impact',sans-serif;
+header {
+	font-family: 'impact', sans-serif;
 }
 header, nav {
 	background: #fff;
@@ -61,7 +56,7 @@ nav ul {
 nav ul li {
 	display: inline;
 	font-size: 20px;
-		font-family: 'montserrat',sans-serif;
+	font-family: 'montserrat', sans-serif;
 }
 
 li a {
@@ -69,15 +64,14 @@ li a {
 	display: inline;
 	text-decoration: none;
 }
-.about,
-.active a{
-	color:green;
+.about, .active a {
+	color: green;
 }
-.hour{
-    text-align: center;
-    font-size: 16px;
-    padding-bottom: 20px;
-    }
+.hour {
+	text-align: center;
+	font-size: 16px;
+	padding-bottom: 20px;
+}
 .board {
 	box-shadow: 5px 5px 10px #ccff6;
 }
@@ -93,7 +87,7 @@ li a {
 	text-align: center;
 	color: #fff;
 	margin-top: 0;
-	font-family: 'montserrat',sans-serif;
+	font-family: 'montserrat', sans-serif;
 }
 .description {
 	width: 75%;
@@ -122,7 +116,7 @@ li p {
 .display {
 	position: relative;
 	width: 80%;
-	    margin: 46px auto;
+	margin: 46px auto;
 	display: block;
 }
 .abtimg {
@@ -135,18 +129,16 @@ li p {
 	width: 380px;
 	line-height: 34px;
 	margin-left: 2%;
-	
 }
 .caption {
 	top: 45%;
 	left: 0;
 	width: 100%;
 }
-.message {
+.abtmessage, .message {
 	display: block;
 	width: 65%;
 	margin: 0 auto;
-	
 }
 .title {
 	text-align: center;
@@ -161,35 +153,43 @@ li p {
 	margin-left: 5%;
 }
 .phone {
-	color: #20771f;
 	font-weight: bold;
 }
-.contact{float:right;}
+.contact {
+	float: right;
+}
+@media screen and (max-width: 450px) {
+	.title {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
 @media screen and (max-width: 768px) {
 	.menu {
 		width: 100%;
 	}
 	.logo {
-		width: 40px;
-		height: 40px;
+		width: 50px;
+		height: 50px;
 	}
-	.display{
+	.display {
 		width: 100%;
-		margin-top:0;
+		margin-top: 0;
+	}
+	.abtmessage {
+		width: 100%;
 	}
 	.message {
 		width: 90%;
 		margin-left: 0;
-
 	}
 	.summary {
-		margin-left: 5%;
+		margin-left: 4%;
 		width: 100%;
 		padding: 10px 4px
 	}
 	.title {
 		padding: 5px 50px;
-		width: 280px;
 	}
 	.abtimg {
 		width: 51%;
@@ -236,11 +236,23 @@ footer {
 	width: 100%;
 	float: right;
 	padding-top: 20px;
-		    background: #5d425f;
-		    margin-top: 35px;
+	background: #5d425f;
+	margin-top: 35px;
 }
 
 footer p {
-	    text-align: center;
-    padding: 25px;
+	text-align: center;
+	padding: 25px;
 }
+footer p a {
+	color: #fff;
+}
+.fa {
+	color: orange;
+	font-size: 20px;
+}
+.navbar-nav > li :hover, .nav > li > a:focus {
+	color: darkorange;
+	background-color: purple;
+}
+
