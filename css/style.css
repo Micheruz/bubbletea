@@ -128,7 +128,6 @@ li p {
 	padding: 10px 40px;
 	width: 380px;
 	line-height: 34px;
-	margin-left: 2%;
 }
 .caption {
 	top: 45%;
@@ -143,7 +142,7 @@ li p {
 .title {
 	text-align: center;
 	font-size: 16px;
-	max-width: 300px;
+	width: 300px;
 	background: #581175;
 	color: #fff;
 	font-family: 'impact', sans-serif;
@@ -162,6 +161,9 @@ li p {
 	.title {
 		width: 100%;
 		margin: 0 auto;
+	}
+	.contact{
+		float:none;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -184,7 +186,6 @@ li p {
 		margin-left: 0;
 	}
 	.summary {
-		margin-left: 4%;
 		width: 100%;
 		padding: 10px 4px
 	}
