@@ -17,9 +17,16 @@ h1 {
 	color: orange;
 	font-family: 'impact', sans-serif;
 }
-
+.about,
 h3 {
 	text-align: center;
+}
+h2,
+h3,
+h4,
+li,
+p{
+	font-family: 'montserrat',sans-serif;
 }
 .drinks {
 	columns: 2;
@@ -39,6 +46,9 @@ button.navbar-toggle {
 .glyphicon {
 	color: #fff;
 }
+header{
+	    font-family: 'impact',sans-serif;
+}
 header, nav {
 	background: #fff;
 }
@@ -51,7 +61,7 @@ nav ul {
 nav ul li {
 	display: inline;
 	font-size: 20px;
-	text-decoration: none;
+		font-family: 'montserrat',sans-serif;
 }
 
 li a {
@@ -59,7 +69,15 @@ li a {
 	display: inline;
 	text-decoration: none;
 }
-
+.about,
+.active a{
+	color:green;
+}
+.hour{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 20px;
+    }
 .board {
 	box-shadow: 5px 5px 10px #ccff6;
 }
@@ -75,6 +93,7 @@ li a {
 	text-align: center;
 	color: #fff;
 	margin-top: 0;
+	font-family: 'montserrat',sans-serif;
 }
 .description {
 	width: 75%;
@@ -116,6 +135,7 @@ li p {
 	width: 380px;
 	line-height: 34px;
 	margin-left: 2%;
+	
 }
 .caption {
 	top: 45%;
@@ -126,6 +146,7 @@ li p {
 	display: block;
 	width: 65%;
 	margin: 0 auto;
+	
 }
 .title {
 	text-align: center;
@@ -140,10 +161,10 @@ li p {
 	margin-left: 5%;
 }
 .phone {
-	text-align: right;
 	color: #20771f;
 	font-weight: bold;
 }
+.contact{float:right;}
 @media screen and (max-width: 768px) {
 	.menu {
 		width: 100%;
@@ -154,13 +175,15 @@ li p {
 	}
 	.display{
 		width: 100%;
+		margin-top:0;
 	}
 	.message {
 		width: 90%;
 		margin-left: 0;
+
 	}
 	.summary {
-		margin-left: 10%;
+		margin-left: 5%;
 		width: 100%;
 		padding: 10px 4px
 	}
@@ -181,7 +204,7 @@ li p {
 
 	.center {
 		margin: 0 auto;
-		width: 345px;
+		width: 378px;
 	}
 	.navbar-nav {
 		width: 100%;
@@ -214,13 +237,9 @@ footer {
 	float: right;
 	padding-top: 20px;
 		    background: #5d425f;
-		    margin-top: 10px;
+		    margin-top: 35px;
 }
-footer p:before {
-	width: 50px;
-	color: #bfbbb1;
-	height: 2px;
-}
+
 footer p {
 	    text-align: center;
     padding: 25px;
