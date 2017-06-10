@@ -1,6 +1,10 @@
 body {
 	background-color: gray;
 }
+header{
+	    width: 204px;
+    margin: 0 auto;
+}
 .affix {
 	top: 0;
 	width: 100%;
