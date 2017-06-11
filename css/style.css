@@ -1,9 +1,9 @@
 body {
 	background-color: gray;
 }
-header{
-	    width: 204px;
-    margin: 0 auto;
+header {
+	width: 204px;
+	margin: 0 auto;
 }
 .affix {
 	top: 0;
@@ -35,8 +35,8 @@ h2, h3, h4, li, p {
 	-moz-columns: 3;
 	list-style-type: none;
 	padding: 0;
-	padding-bottom:20px;
-	    width: 87%;
+	padding-bottom: 20px;
+	width: 87%;
 	margin: 0 auto;
 }
 button.navbar-toggle {
@@ -84,20 +84,26 @@ li a {
 }
 .menu {
 	float: left;
-	 width: 48%;
-    margin: .5% 7px;
+	width: 48%;
+	margin: .5% 7px;
 	border: 2px solid orange;
 	padding: 10px;
+	    height: 400px;
 }
 .menu:first-child {
-    height: 705px;
+    width: 70%;
+    height:auto;
+    margin: 0 auto;
+    float: none;
 }
+
 .menu h2 {
 	background: orange;
 	text-align: center;
 	color: #fff;
 	margin-top: 0;
 	font-family: 'montserrat', sans-serif;
+	padding: 5px;
 }
 .description {
 	width: 75%;
@@ -109,10 +115,24 @@ li a {
 .drinks li {
 	color: #20771f;
 	font-weight: bold;
+	text-align:center;
+	padding: 5px 0;
 	padding: 5px 0;
 }
+#signature {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+#signature li {
+    width: 100%;
+    display: inherit;
+}
 li p {
-	display: inline-block;
+	width:100%;
 	font-size: 10px;
 }
 .logo {
@@ -173,20 +193,24 @@ li p {
 		width: 100%;
 		margin: 0 auto;
 	}
-	.contact{
-		float:none;
+	.contact {
+		float: none;
 	}
+	
 }
 @media screen and (max-width: 768px) {
 	h3 span {
-    display: block;
-}
+		display: block;
+	}
 	.menu {
 		width: 100%;
+		margin: 7px auto;
+		height: auto;
 	}
 	.menu:first-child {
-    height: auto;
-}
+		height: auto;
+		width: 100%;
+	}
 	.logo {
 		width: 50px;
 		height: 50px;
@@ -196,11 +220,10 @@ li p {
 		margin-top: 0;
 	}
 	.drinks {
-	columns: 2;
-	-webkit-columns: 2;
-	-moz-columns: 2;
-	width: 80%;
-	text-align: center;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		width: 80%;
 	}
 	.abtmessage {
 		width: 100%;
@@ -224,6 +247,9 @@ li p {
 	.navbar {
 		margin-bottom: 0;
 	}
+	#signature li {
+    display: inline-block;
+}
 }
 @media screen and (min-width: 768px) {
 
@@ -240,23 +266,24 @@ li p {
 }
 
 }
-@media screen and (min-width:900px){
+@media screen and (min-width: 900px) {
 	.menu:first-child {
-    height: 639px;
-    }
-    .menu{
-    	    width: 48%;
-    margin: 1% 8px;
-    }
+		height: 639px;
+	}
+	.menu {
+		width: 48%;
+		margin: 1% 8px;
+	}
 }
-@media screen and (min-width: 1150px){
-.menu:first-child {
-    height: 610px;
-}
-.menu{
-	    width: 49%;
-    margin: 1% 5px;
-}
+@media screen and (min-width: 1150px) {
+	.menu:first-child {
+		height: 610px;
+	}
+	
+	.menu {
+		width: 49%;
+		margin: 1% 5px;
+	}
 }
 .hours {
 	float: right;
