@@ -24,16 +24,19 @@ h1 {
 .about, h3 {
 	text-align: center;
 }
+
 h2, h3, h4, li, p {
 	font-family: 'montserrat', sans-serif;
 }
+
 .drinks {
-	columns: 2;
-	-webkit-columns: 2;
-	-moz-columns: 2;
+	columns: 3;
+	-webkit-columns: 3;
+	-moz-columns: 3;
 	list-style-type: none;
 	padding: 0;
-	width: 70%;
+	padding-bottom:20px;
+	    width: 87%;
 	margin: 0 auto;
 }
 button.navbar-toggle {
@@ -81,10 +84,13 @@ li a {
 }
 .menu {
 	float: left;
-	width: 49%;
-	margin: 4px;
+	 width: 48%;
+    margin: .5% 7px;
 	border: 2px solid orange;
 	padding: 10px;
+}
+.menu:first-child {
+    height: 705px;
 }
 .menu h2 {
 	background: orange;
@@ -97,6 +103,7 @@ li a {
 	width: 75%;
 	margin: auto;
 	padding-bottom: 25px;
+	text-align: center;
 }
 
 .drinks li {
@@ -171,9 +178,15 @@ li p {
 	}
 }
 @media screen and (max-width: 768px) {
+	h3 span {
+    display: block;
+}
 	.menu {
 		width: 100%;
 	}
+	.menu:first-child {
+    height: auto;
+}
 	.logo {
 		width: 50px;
 		height: 50px;
@@ -181,6 +194,13 @@ li p {
 	.display {
 		width: 100%;
 		margin-top: 0;
+	}
+	.drinks {
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+	width: 80%;
+	text-align: center;
 	}
 	.abtmessage {
 		width: 100%;
@@ -219,6 +239,24 @@ li p {
 	}
 }
 
+}
+@media screen and (min-width:900px){
+	.menu:first-child {
+    height: 639px;
+    }
+    .menu{
+    	    width: 48%;
+    margin: 1% 8px;
+    }
+}
+@media screen and (min-width: 1150px){
+.menu:first-child {
+    height: 610px;
+}
+.menu{
+	    width: 49%;
+    margin: 1% 5px;
+}
 }
 .hours {
 	float: right;
