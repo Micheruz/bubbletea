@@ -5,15 +5,7 @@ header {
 	width: 204px;
 	margin: 0 auto;
 }
-.affix {
-	top: 0;
-	width: 100%;
-	padding: 6px 0;
-}
 
-.affix + .container-fluid {
-	padding-top: 70px;
-}
 h1 {
 	margin: 0 auto;
 	display: block;
@@ -88,15 +80,14 @@ li a {
 	margin: .5% 7px;
 	border: 2px solid orange;
 	padding: 10px;
-	    height: 400px;
+	height: 400px;
 }
 .menu:first-child {
-    width: 70%;
-    height:auto;
-    margin: 0 auto;
-    float: none;
+	width: 70%;
+	height: auto;
+	margin: 0 auto;
+	float: none;
 }
-
 .menu h2 {
 	background: orange;
 	text-align: center;
@@ -115,24 +106,24 @@ li a {
 .drinks li {
 	color: #20771f;
 	font-weight: bold;
-	text-align:center;
+	text-align: center;
 	padding: 5px 0;
 	padding: 5px 0;
 }
 #signature {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
 }
 #signature li {
-    width: 100%;
-    display: inherit;
+	width: 100%;
+	display: inherit;
 }
 li p {
-	width:100%;
+	width: 100%;
 	font-size: 10px;
 }
 .logo {
@@ -151,9 +142,10 @@ li p {
 	display: block;
 }
 .abtimg {
-	width: 43%;
-	float: right;
-	margin: 0 auto;
+    width: 50%;
+    float: right;
+    padding-left: 13px;
+    margin: 5px 0px 10px;
 }
 .summary {
 	padding: 10px 40px;
@@ -196,7 +188,7 @@ li p {
 	.contact {
 		float: none;
 	}
-	
+
 }
 @media screen and (max-width: 768px) {
 	h3 span {
@@ -248,8 +240,8 @@ li p {
 		margin-bottom: 0;
 	}
 	#signature li {
-    display: inline-block;
-}
+		display: inline-block;
+	}
 }
 @media screen and (min-width: 768px) {
 
@@ -272,33 +264,9 @@ li p {
 	}
 	.menu {
 		width: 48%;
-		margin: 1% 8px;
 	}
 }
-@media screen and (min-width: 1150px) {
-	.menu:first-child {
-		height: 610px;
-	}
-	
-	.menu {
-		width: 49%;
-		margin: 1% 5px;
-	}
-}
-.hours {
-	float: right;
-	border: 2px solid gainsboro;
-	width: 300px;
-	padding: 25px;
-	font-weight: bold;
-}
-.hours ul {
-	padding: 0;
-	text-indent: 20px;
-}
-.hours ul li {
-	list-style-type: none;
-}
+
 footer {
 	bottom: 0;
 	color: #bfbbb1;
