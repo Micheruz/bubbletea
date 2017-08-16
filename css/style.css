@@ -61,7 +61,7 @@ header, nav {
 	font-weight: 500;
 }
 .navbar-brand a:hover{
-	color: orange;
+	color: inherit;
 }
 nav ul {
 	text-align: center;
