@@ -81,7 +81,7 @@ li a {
 	font-weight: 900;
 }
 .about, .active a {
-	color: #3bfd3b;
+	color: #00d000;
 }
 .active a {
 	text-decoration: underline;
@@ -241,6 +241,9 @@ header h1{
 
 	}
 	.navbar-brand a {
+		color: #fff;
+	}
+	.navbar-brand a:hover{
 		color: #fff;
 	}
 	h3 span {
