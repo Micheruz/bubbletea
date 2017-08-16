@@ -41,12 +41,27 @@ button.navbar-toggle {
 	color: #fff;
 }
 header {
+	width: 100%;
 	font-family: 'impact', sans-serif;
 }
 header, nav {
-	background: #fff;
+	color: #fff;
 }
-
+.navbar-header{
+	background: rgba(56, 47, 47, 0.39);
+	text-align: center;
+	width: 100%;
+}
+.navbar-brand{
+	font-family: 'impact', sans-serif;
+ font-size: 28px !important;
+ text-align: center;
+ float: none !important;
+  display: none;
+}
+.navbar-brand a:hover{
+	color: orange;
+}
 nav ul {
 	text-align: center;
 	padding: 0;
@@ -62,14 +77,41 @@ li a {
 	color: orange;
 	display: inline;
 	text-decoration: none;
+	font-weight: 900;
 }
 .about, .active a {
-	color: green;
+	color: #3bfd3b;
+}
+.active a {
+	text-decoration: underline;
+}
+.cover{
+}
+.intro{
+	//    margin-top: calc(68vh - 395px);
+	line-height: 3;
+width: 100%;
+}
+.menuBtn {
+	background: orange;
+color: #fff;
+border-bottom: 3px inset #ea9474 !important;
+margin: 30px auto !important;
+display: block !important;
+width: 70%;
+font-weight: bold !important;
 }
 .hour {
+	list-style-type: none;
 	text-align: center;
 	font-size: 16px;
-	padding-bottom: 20px;
+	padding: 20px 0px;
+	color: #fff;
+	background: rgba(56, 47, 47, 0.39);
+	border-radius: 15px;
+}
+.hour li:nth-child(8) {
+	padding-bottom: 15px;
 }
 .board {
 	box-shadow: 5px 5px 10px #ccff6;
@@ -102,7 +144,6 @@ li a {
 	padding-bottom: 25px;
 	text-align: center;
 }
-
 .drinks li {
 	color: #20771f;
 	font-weight: bold;
@@ -128,28 +169,25 @@ li p {
 }
 .logo {
 	border: 2px solid orange;
-	width: 75px;
-	height: 75px;
+	width: 35px;
+	height: 35px;
 	margin: 10px auto;
 	display: block;
 	border-radius: 50%;
 }
 
 .display {
-	position: relative;
-	width: 80%;
-	margin: 46px auto;
+	position: absolute;
+top: 0;
 	display: block;
+	    width: 100%;
 }
 .abtimg {
-    width: 50%;
-    float: right;
-    padding-left: 13px;
-    margin: 5px 0px 10px;
+display: block;
+
 }
 .summary {
-	padding: 10px 40px;
-	width: 380px;
+	padding: 40px;
 	line-height: 34px;
 }
 .caption {
@@ -159,26 +197,28 @@ li p {
 }
 .abtmessage, .message {
 	display: block;
-	width: 65%;
 	margin: 0 auto;
 }
 .title {
 	text-align: center;
 	font-size: 16px;
-	width: 300px;
-	background: #581175;
+		background: #581175;
 	color: #fff;
 	font-family: 'impact', sans-serif;
 	opacity: 0.8;
 	padding: 15px;
 	line-height: 30px;
-	margin-left: 5%;
 }
 .phone {
 	font-weight: bold;
 }
 .contact {
 	float: right;
+}
+iframe {
+	margin-top: 40px;
+	height: 200px;
+    width: 100%;
 }
 @media screen and (max-width: 450px) {
 	.title {
@@ -191,6 +231,17 @@ li p {
 
 }
 @media screen and (max-width: 768px) {
+header h1{
+	display: none !important;
+
+	}
+	.navbar-brand{
+		display: block;
+
+	}
+	.navbar-brand a {
+		color: #fff;
+	}
 	h3 span {
 		display: block;
 	}
@@ -204,10 +255,12 @@ li p {
 		width: 100%;
 	}
 	.logo {
-		width: 50px;
-		height: 50px;
+		display: none;
 	}
+
 	.display {
+		position: absolute;
+    top: 0;
 		width: 100%;
 		margin-top: 0;
 	}
@@ -226,25 +279,63 @@ li p {
 	}
 	.summary {
 		width: 100%;
-		padding: 10px 4px
+		padding: 10px 4px;
+		font-size: 16px;
 	}
 	.title {
 		padding: 5px 50px;
 	}
 	.abtimg {
-		width: 51%;
-		margin-left: 18px;
-		margin-top: 22px;
+		display: none;
+			margin-top: 22px;
 	}
 	.navbar {
 		margin-bottom: 0;
+		    margin-top: calc(55% - 68px);
 	}
 	#signature li {
 		display: inline-block;
 	}
 }
 @media screen and (min-width: 768px) {
+	.abtimg{
+		display: block !important;
+		margin-top: 100px;
+	}
+	.navbar-header{
+	font-size: 40px;
+	background: #fff;
+	color: black;
+ }
+ .navbar{
+	 margin-top: 0;
+ }
+ .navbar-brand a {
+ 	color: black;
+ }
+ .logo{
+	 display: block;
+ }
+ .hour {
+	 color: #fff;
+	 background: rgba(56, 47, 47, 0.39);
+	 height: auto;
 
+ }
+ .display{
+	 position:relative;
+ }
+ .intro{
+	 font-size: 20px;
+	line-height: 1.7;
+ }
+  .menuBtn {
+//	 display: none !important;
+ }
+ .cover {
+     margin-top: 60px;
+     display: block;
+ }
 	.center {
 		margin: 0 auto;
 		width: 378px;
@@ -255,6 +346,10 @@ li p {
 		float: none;
 		display: inline-block;
 	}
+	.intro {
+		display: none;
+	}
+
 }
 
 }
@@ -270,12 +365,13 @@ li p {
 footer {
 	bottom: 0;
 	color: #bfbbb1;
-	font-size: 20px;
+	font-size: 14px;
 	width: 100%;
 	float: right;
 	padding-top: 20px;
 	background: #5d425f;
 	margin-top: 35px;
+	border: 2px solid #5d425f;
 }
 
 footer p {
@@ -290,7 +386,7 @@ footer p a {
 	font-size: 20px;
 }
 .navbar-nav > li :hover, .nav > li > a:focus {
-	color: darkorange;
-	background-color: purple;
+	color: #fff;
+	background-color: darkorange !important;
+	border-radius: 15px;
 }
-

@@ -26,18 +26,18 @@
 	</head>
 
 	<body>
-		<div class="container">
-			<div>
-				<header>
-					<a href="index.html"><div class="logo" ></div></a>
-					<h1>Bubble Tea House</h1>
-				</header>
-				<nav class="navbar">
+		<div class="container-fluid">
+			<div class="top">
+
+				<nav class="navbar navbar-static-top">
+					<div class="logo"></div>
 					<div class="navbar-header">
+
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false">
 
 							<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 						</button>
+						<div class="navbar-brand"><a href="index.html">Bubble Tea House</a></div>
 					</div>
 					<div class="collapse navbar-collapse" id="navigation">
 						<div class="center">
@@ -59,16 +59,25 @@
 					</div>
 				</nav>
 
+			</div>
+		</div>
+		<div class="image">
+		</div>
 				<h2 class="about">Contact</h2>
+				<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-sm-offset-1 col-md-offset-2 col-lg-offset-3">
 
 				<div class="message">
 
 					<h4>Location</h4>
-					<!--<img class="display img-responsive" src="images/storefront.jpg"/> -->
 					<p>
 						We're located at 849 Westminster St
 						Providence, RI 02903
-					</p><iframe width="300" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJhfsuwnNF5IkRWuy7vMcKXHw&key=AIzaSyBdcqwmpkAfRPa9Q7J_Fk0xZKUhAfyfQwU" allowfullscreen></iframe>
+					</p>
+					<!--<iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJhfsuwnNF5IkRWuy7vMcKXHw&key=AIzaSyBdcqwmpkAfRPa9Q7J_Fk0xZKUhAfyfQwU" allowfullscreen></iframe> -->
+				</div>
+				</div>
+				<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
+
 					<div class="contact">
 						<h4>Hours</h4>
 						<p>
@@ -83,10 +92,13 @@
 							Check out our <a href="https://www.facebook.com/bubbleteahouseprovidence/">Facebook page! <i class="fa fa-facebook" aria-hidden="true" ></i></a>
 						</p>
 					</div>
+					</div>
 
-				</div>
-			</div>
-		</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-md-offset-2">
+						<iframe frameborder="0" style="border:0, height:200px" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJhfsuwnNF5IkRWuy7vMcKXHw&key=AIzaSyBdcqwmpkAfRPa9Q7J_Fk0xZKUhAfyfQwU" allowfullscreen></iframe>
+					</div>
+
 		<footer>
 			<p>
 				Contact us on Facebook!<a href="https://www.facebook.com/bubbleteahouseprovidence/"> <i class="fa fa-facebook" aria-hidden="true" ></i></a>
@@ -103,5 +115,7 @@
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
+
+				<script src="js/bubbletea.js"></script>
 	</body>
 </html>
